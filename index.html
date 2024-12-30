@@ -4,33 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password generator</title>
+    <title>Password Generator</title>
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
 <body>
     <main>
         <div class="password-list-container">
-            <h1>Keep your life safe with unbreakable passwords.</h1>
-            <h2>Passwords:</h2>
+            <h1>Keep your life safe with unbreakable passwords</h1>
+            <h2>Generated Passwords:</h2>
             <div class="number-of-passwords">
                 <div>
-                    <div></div>
-                    <p>Passwords</p>
-                </div>
-                <div>
-                    <div></div>
+                    <div class="strong"></div>
                     <p>Strong</p>
                 </div>
                 <div>
-                    <div></div>
+                    <div class="mediocre"></div>
                     <p>Mediocre</p>
+                </div>
+                <div>
+                    <div class="weak"></div>
+                    <p>Weak</p>
                 </div>
             </div>
         </div>
         <div class="create-password-container">
             <h2>Create</h2>
-            <form action=""></form>
+            <h3>A solid password by choosing properties</h3>
+
+            <div class="option digits">
+                <label for="digits">Include Digits:</label>
+                <div>
+                    <button class="increment" data-type="digits">+</button>
+                    <button class="decrement" data-type="digits">-</button>
+                </div>
+            </div>
+
+            <div class="option capitals">
+                <label for="capitals">Include Uppercase Letters:</label>
+                <div>
+                    <button class="increment" data-type="capitals">+</button>
+                    <button class="decrement" data-type="capitals">-</button>
+                </div>
+            </div>
+
+            <div class="option symbols">
+                <label for="symbols">Include Symbols:</label>
+                <div>
+                    <button class="increment" data-type="symbols">+</button>
+                    <button class="decrement" data-type="symbols">-</button>
+                </div>
+            </div>
         </div>
     </main>
 </body>
