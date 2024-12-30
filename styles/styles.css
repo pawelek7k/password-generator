@@ -21,3 +21,8 @@ main {
   height: 100vh;
   color: wheat;
 }
+
+.number-of-passwords {
+  display: flex;
+  gap: 2rem;
+}
