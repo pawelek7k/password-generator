@@ -1,5 +1,20 @@
 @import url("./root.css");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: orangered;
+}
+
+main {
+  display: flex;
+  align-items: center;
+}
+
+.password-list-container {
+  background-color: black;
 }
