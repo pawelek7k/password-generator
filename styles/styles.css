@@ -38,3 +38,18 @@ h2 {
 h3 {
   color: var(--secondary-accent-shade);
 }
+
+.circle {
+  background-color: var(--secondary);
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  border: thin solid var(--accent);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.circle:hover {
+  background-color: var(--primary-accent-shade);
+}
