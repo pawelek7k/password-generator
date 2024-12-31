@@ -39,3 +39,11 @@ incrementButtons.forEach(function (button) {
         }
     });
 });
+decrementButtons.forEach(function (button) {
+    button.addEventListener('click', function () {
+        var type = button.dataset.type;
+        if (type && options[type] > 0) {
+            options[type]--;
+        }
+    });
+});
