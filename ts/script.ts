@@ -44,3 +44,12 @@ incrementButtons.forEach((button) => {
         }
     });
 });
+
+decrementButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+        const type = button.dataset.type;
+        if (type && options[type as keyof typeof options] > 0) {
+            options[type as keyof typeof options]--;
+        }
+    });
+});
