@@ -7,7 +7,8 @@
 }
 
 body {
-  background-color: orangered;
+  background-color: var(--background);
+  color: var(--text);
 }
 
 main {
@@ -19,7 +20,6 @@ main {
   background-color: black;
   width: 50%;
   height: 100vh;
-  color: wheat;
 }
 
 .number-of-passwords {
