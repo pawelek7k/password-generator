@@ -1,10 +1,12 @@
 :root {
-  --text: #e7e4e9;
-  --background: #120d16;
+  --text: #18131c;
+  --background: #eeeeee;
   --background-accent: #0d0910;
-  --primary: #be9ad5;
+  --primary: #b3b0b5;
   --secondary: #5a237f;
   --accent: #a74de2;
   --primary-accent-shade: #581584;
   --secondary-accent-shade: #49126e;
+  --box-shadow-color: #42445a18;
+  --transition: 250ms ease-in-out;
 }
