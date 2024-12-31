@@ -5,6 +5,9 @@ let options = {
 };
 
 const passwordList = document.querySelector('.password-list') as HTMLElement;
+const lengthValue = document.getElementById('length-value') as HTMLElement;
+const submitButton = document.getElementById('submit') as HTMLButtonElement;
+
 const incrementButtons = document.querySelectorAll('.increment') as NodeListOf<HTMLButtonElement>;
 const decrementButtons = document.querySelectorAll('.decrement') as NodeListOf<HTMLButtonElement>;
 
