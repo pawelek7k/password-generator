@@ -17,7 +17,7 @@ main {
 }
 
 .password-list-container {
-  background-color: black;
+  background-color: var(--text);
   width: 50%;
   height: 100vh;
 }
