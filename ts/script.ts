@@ -35,3 +35,12 @@ const addPasswordToList = (password: string) => {
     passwordLi.textContent = password;
     passwordList.appendChild(passwordLi);
 }
+
+incrementButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+        const type = button.getAttribute('data-type');
+        if (type && options[type as keyof typeof options] !== undefined) {
+            options[type as keyof typeof options]++;
+        }
+    });
+});

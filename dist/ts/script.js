@@ -31,3 +31,11 @@ var addPasswordToList = function (password) {
     passwordLi.textContent = password;
     passwordList.appendChild(passwordLi);
 };
+incrementButtons.forEach(function (button) {
+    button.addEventListener('click', function () {
+        var type = button.getAttribute('data-type');
+        if (type && options[type] !== undefined) {
+            options[type]++;
+        }
+    });
+});
