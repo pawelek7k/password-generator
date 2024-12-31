@@ -4,7 +4,7 @@ let options = {
     symbols: 0,
 };
 
-const passwordListContainer = document.querySelector('.password-list-container') as HTMLElement;
+const passwordList = document.querySelector('.password-list') as HTMLElement;
 const incrementButtons = document.querySelectorAll('.increment') as NodeListOf<HTMLButtonElement>;
 const decrementButtons = document.querySelectorAll('.decrement') as NodeListOf<HTMLButtonElement>;
 
@@ -27,4 +27,11 @@ const genereatePassword = (options: { digits: number; capitals: number; symbols:
     }
 
     return password;
+}
+
+const addPasswordToList = (password: string) => {
+    const passwordLi = document.createElement('li');
+    passwordLi.className = 'password-item';
+    passwordLi.textContent = password;
+    passwordList.appendChild(passwordLi);
 }

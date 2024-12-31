@@ -4,7 +4,7 @@ var options = {
     capitals: 0,
     symbols: 0,
 };
-var passwordListContainer = document.querySelector('.password-list-container');
+var passwordList = document.querySelector('.password-list');
 var incrementButtons = document.querySelectorAll('.increment');
 var decrementButtons = document.querySelectorAll('.decrement');
 var genereatePassword = function (options) {
@@ -24,4 +24,10 @@ var genereatePassword = function (options) {
         password += base[Math.floor(Math.random() * base.length)];
     }
     return password;
+};
+var addPasswordToList = function (password) {
+    var passwordLi = document.createElement('li');
+    passwordLi.className = 'password-item';
+    passwordLi.textContent = password;
+    passwordList.appendChild(passwordLi);
 };
